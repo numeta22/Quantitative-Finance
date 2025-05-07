@@ -1,1 +1,1 @@
-# ML for Quantitative Finance and Banking
+# ML in Quantitative Finance
