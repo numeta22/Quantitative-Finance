@@ -7,13 +7,14 @@ import pandas as pd
 
 ticker = 'META'
 #Created a new DataFrame for modular backtesting
+
 df = pd.DataFrame({
-    'Date': merged['Date'],
-    'Open': merged[f'{ticker} Open'],
-    'High': merged[f'{ticker} High'],
-    'Low': merged[f'{ticker} Low'],
-    'Close': merged[f'{ticker} Close'],
-    'Volume': merged[f'{ticker} Volume']
+'Date': merged['Date'],
+'Open': merged[f'{ticker} Open'],
+'High': merged[f'{ticker} High'],
+'Low': merged[f'{ticker} Low'],
+'Close': merged[f'{ticker} Close'],
+'Volume': merged[f'{ticker} Volume']
 })
 #Referenced the backtesting sub-module 
 class SMACrossoverStrategy(Strategy):
