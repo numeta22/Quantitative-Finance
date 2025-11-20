@@ -7,7 +7,7 @@ import pandas as pd
 
 ticker = 'META'
 #Created a new DataFrame for modular backtesting
-
+```python
 df = pd.DataFrame({
 'Date': merged['Date'],
 'Open': merged[f'{ticker} Open'],
