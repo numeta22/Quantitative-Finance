@@ -4,6 +4,7 @@ Below is an example of a Simple Moving Average crossover backtest using Python p
 ## Main Ideas and Objectives
 Create an iterative system for trading stocks, FOREX currencies, options, derivatives, etc. using Python or C++
 ### Import necessary packages
+```python
 import pandas as pd
 import yfinance as yf
 import numpy as np
