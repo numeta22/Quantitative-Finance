@@ -11,7 +11,7 @@ import numpy as np
 from backtesting import Strategy, Backtest
 from backtesting.lib import crossover
 
-#### Download stock ticker data from Yahoo Fiannce
+### Download stock ticker data from Yahoo Fiannce
 
 ticker = 'META'
 #Created a new DataFrame for robust backtesting
