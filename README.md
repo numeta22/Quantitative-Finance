@@ -1,12 +1,19 @@
 # Quantitative Trading Backtester
 Below is an example of a Simple Moving Average crossover backtest using Python package "backtesting", enjoy! - Beau
 
+## Main Ideas and Objectives
+Create an iterative system for trading stocks, FOREX currencies, options, derivatives, etc. using Python or C++
+### Import necessary packages
+import pandas as pd
+import yfinance as yf
+import numpy as np
 from backtesting import Strategy, Backtest
 from backtesting.lib import crossover
-import pandas as pd
+
+#### Download stock ticker data from Yahoo Fiannce
 
 ticker = 'META'
-#Created a new DataFrame for modular backtesting
+#Created a new DataFrame for robust backtesting
 ```python
 df = pd.DataFrame({
 'Date': merged['Date'],
