@@ -14,7 +14,7 @@ from backtesting.lib import crossover
 ### Download stock ticker data from Yahoo Fiannce
 
 ticker = 'META'
-#Created a new DataFrame for robust backtesting
+### Created a new DataFrame for backtesting
 ```python
 df = pd.DataFrame({
 'Date': merged['Date'],
@@ -24,7 +24,7 @@ df = pd.DataFrame({
 'Close': merged[f'{ticker} Close'],
 'Volume': merged[f'{ticker} Volume']
 })
-#Referenced the backtesting sub-module 
+### Referenced the backtesting sub-module 
 class SMACrossoverStrategy(Strategy):
     
     params = dict(
@@ -32,7 +32,7 @@ class SMACrossoverStrategy(Strategy):
         mid_window=20,
         long_window=50
     )
-#Review the init and next functions, "from talib import SMA" for rolling mean calculations  
+### Review the init and next functions, "from talib import SMA" for rolling mean calculations  
     def init(self):
         price = self.data.Close
         self.sma_short = self.I(lambda x: pd.Series(x).rolling(self.p.short_window).mean(), price)                
